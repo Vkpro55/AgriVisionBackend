@@ -18,7 +18,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 app.use(cors({
-    origin: "http://localhost:5173",  // Allow frontend to make requests from localhost:3001 (adjust if your frontend runs on a different port)
+    origin: "https://agri-vision-frontend.vercel.app",  // Allow frontend to make requests from localhost:3001 (adjust if your frontend runs on a different port)
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,  // Allows credentials (cookies, authorization headers, etc.) to be sent
 }));
